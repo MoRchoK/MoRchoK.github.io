@@ -73,11 +73,14 @@ nav{
     cursor: pointer;
     margin: 50px 14px 0px 14px;
     }
-
+    .about_me{
+    height: 720px;
+        }
 .about_me_item {
     width: 729px;
     margin: 0px auto;
     }
+
 
 .about_me > h2 {
     text-align: center; 
@@ -135,7 +138,7 @@ body hr{
     text-align: center; 
     font-size: 22px;
     width: 250px;
-    margin: 107px auto 0px auto;
+    margin: 0px auto;
     color: #263244 ;
     font-weight: 600; 
     
@@ -242,8 +245,8 @@ body hr{
 .case p{
     display: block;
     color: #6d7682;
-    margin-top: 15px; 
-    margin-bottom: 15px;
+    margin-top: 20px; 
+    margin-bottom: 20px;
 }
 
 .contacts a {
@@ -295,10 +298,6 @@ body hr{
     height: 25px;
     border: 1px solid;
     margin: 10px auto 0px 10px;
-    background: 
+   
 }
 
-.opasity{
-    )
-    opacity: 0;
-}
