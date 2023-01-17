@@ -5,7 +5,7 @@
     <title>Андрей Браун - Веб-разработчик</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script> -->
 </head>
 <body>
  
@@ -111,14 +111,14 @@
                 <option value="4">Интернет-магазин</option>
             </select>
             <h3>Дизайн</h3>
-            <select class="select2" name="type" id="typeSite">
+            <select class="select1" name="type" id="typeSite">
                 <option value="1" selected hidden>Выберите пункт</option>
                 <option value="2">Шаблонный</option>
                 <option value="3">Уникальный</option>
                 <option value="4">WOW-Дизайн</option>
             </select>
             <h3>Адаптивность</h3>
-            <select class="select3"  name="type" id="typeSite">
+            <select class="select1"  name="type" id="typeSite">
                 <option value="1" selected hidden>Выберите пункт</option>
                 <option value="2">Только ПК</option>
                 <option value="3">Только мобильный сайт</option>
@@ -126,12 +126,13 @@
             </select>
             <div class="calculator_footer">
                 <div class="days">
-                    <p>Сроки</p>
-                    <p>0</p>
+                    <p class="daysText">Сроки</p>
+                    <p class="daysVelue">0</p>
                 </div>
-                 <div class="price">
-                    <p>Стоимость</p>
-                    <p>0</p>
+                <div class="clear"></div>
+                 <div class="days">
+                    <p class="daysText">Стоимость</p>
+                    <p class="daysVelue">0</p>
                 </div>
             </div>
         </div>
@@ -140,45 +141,51 @@
     <div class="statistic">
        <div class="statisricContainer">
         <h2>Немного статистики</h2>
+        <hr>
         <div class="statistic_item">
-            <img src="" alt="">
+            <img src="img/smile.png" alt="">
             <h3>120</h3>
             <p>Счастливых клинтов</p>
         </div>
         <div class="statistic_item">
-            <img src="" alt="">
+            <img src="img/skob.png" alt="">
             <h3>4,600</h3>
             <p>Часов работы</p>
         </div>
         <div class="statistic_item">
-            <img src="" alt="">
+            <img src="img/galka.png" alt="">
             <h3>340</h3>
             <p>Проетов завершено</p>
         </div>
         <div class="statistic_item">
-            <img src="" alt="">
+            <img src="img/prize.png" alt="">
             <h3>23</h3>
             <p>Наград получено</p>
         </div>
+        
     </div>
     </div>
+    
     <div class="reviews">
       <div class="reviewsContainer">
        <h2>Отзывы</h2>
+       <hr>
        <div class="review">
-        <img src="" alt="">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim, quae.</p>
-        <p><b>Михаил,</b> Ген директор ПАО "Газпром"</p>
+        <img src="img/man.png" alt="">
+        <p class="TextMishi">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim, quae.</p>
+        <p class="misha"><b>Михаил,</b> Ген директор ПАО "Газпром"</p>
         </div>
     </div>
     </div>
-    <div class="contacts">
+    <div class="mycontacts">
         <div class="contacts_container">
             <h2>Мои Контакты</h2>
+            <hr>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius beatae laudantium quibusdam, quae sunt vero. Natus laudantium sequi culpa beatae!</p>
             <div class="contacts_data">
                 <div class="contacts_data_item">
                     <img src="img/geo.png" alt="">
-                    <p>Санкт-Петербург, Невский проспект 11</p>
+                    <p>Санкт-Петербург, <br> Невский проспект 11</p>
                 </div>
                 <div class="contacts_data_item">
                     <img src="img/mail.png" alt="">
@@ -188,23 +195,27 @@
                     <img src="img/tel.png" alt="">
                     <p>+7 999-999-99-99</p>
                 </div>
-            </div>
-            <h3>Оставьте мне сообщение</h3>
-            <form action="#">
+                <div class="clear"></div>
+            
+                <h3>Оставьте мне сообщение</h3>
                 <div class="contacts_inputs">
-                    <input type="text" placeholder="Имя">
-                    <input type="text" placeholder="Email">
-                </div>
-                <textarea name="message" id="messageText" cols="30" rows="10"></textarea>
-                <input type="submit" value="Отправить">
-            </form>
-            <div class="contacts_social">
-                <a href="#"><img src="img/fb.png" alt=""></a>
-                <a href="#"><img src="img/tvit.png" alt=""></a>
-                <a href="#"><img src="img/bool.png" alt=""></a>
-                <a href="#"><img src="img/kat.png" alt=""></a>
-                <a href="#"><img src="img/inst.png" alt=""></a>
-                <a href="#"><img src="img/in.png" alt=""></a>
+                    <input class="input1" type="text" placeholder="Имя">
+                    <input class="input2" type="text" placeholder="Email">
+                
+                <div class="clear"></div>
+                <textarea class="Textarea1" placeholder="Сообщение" name="message" id="messageText" cols="30" rows="10"></textarea>
+                <div class="clear"></div>
+                <input class="input3" type="submit" value="Отправить">
+            </div>
+        </div>
+           
+                <div class="contacts_social">
+                <a class="ssilka1" href="#"><img src="img/fb.png" alt=""></a>
+                <a class="ssilka" href="#"><img src="img/tvit.png" alt=""></a>
+                <a class="ssilka" href="#"><img src="img/bool.png" alt=""></a>
+                <a class="ssilka" href="#"><img src="img/kat.png" alt=""></a>
+                <a class="ssilka" href="#"><img src="img/inst.png" alt=""></a>
+                <a class="ssilka" href="#"><img src="img/in.png" alt=""></a>
             </div>
         </div>
     </div>
@@ -215,7 +226,7 @@
         <div class="footer_container">
             <p>Copyright 2021 Андрей Браун. Design by Web</p>
         </div>
-    </div>
+    </div> 
     <script src="/js/script.js"></script>
 </body>
 </html>
