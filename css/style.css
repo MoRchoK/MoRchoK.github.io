@@ -1,21 +1,51 @@
-.menu {
-  height: 100px;
-  background-color: blue;
+nav {
+  width: 100%;
+  height: 60px;
+  background-color: #344051;
+  position: fixed;
 }
-
-.col {
+nav a, nav a:focus, nav a:active {
+  outline: none;
+  text-decoration: none;
+}
+nav a {
+  color: white;
+}
+nav li {
+  display: block;
+  width: 100%;
+  font-size: 15px;
+  color: white;
+  text-transform: uppercase;
   border: 1px solid red;
 }
-
-.blocc {
-  margin: 0px;
-  padding: 0px 0px;
+nav .menu {
   border: 1px solid red;
+  height: 60px;
+}
+nav .menu > ul {
+  display: flex;
+  padding-left: 10px;
+  width: auto;
+}
+nav .logo {
+  width: auto;
 }
 
-@media screen and (min-width: 600px) and (max-width: 900px) {
-  .dadad {
-    display: none;
+.block2 {
+  width: 100px;
+  color: red;
+}
+
+.block3 {
+  width: 100px;
+  height: 200px;
+  color: white;
+}
+
+@media (min-width: 400px) and (min-height: 200px) {
+  .block4 {
+    font-size: 20px;
   }
 }
 
